@@ -13,7 +13,7 @@ La función acumulada muestra que es más probable encontrar un número bajo de 
 
 ## Ejercicio 2 – Tómbola
 
-¿Qué significa el valor esperado?
+**¿Qué significa el valor esperado?**
 El valor esperado es 8.50 pesos, lo que representa la ganancia promedio esperada por juego.
 
 **¿El juego es favorable para el jugador?**
