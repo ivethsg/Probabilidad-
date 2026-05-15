@@ -1,1 +1,49 @@
+**Estudiante:** Iveth Santacruz  
+**Tema:** Regresión Lineal y Correlación  
 
+Análisis: Grupo 1
+
+### 1. Interpretación del coeficiente de regresión
+Indica que existe una relación lineal directa y constante; por cada hora adicional de estudio, la calificación aumenta proporcionalmente de manera clara y predecible.
+
+### 2. Coeficiente de correlación (Fuerza y Dirección)
+La dirección es positiva y la fuerza es muy fuerte (cercana a 1). Esto significa que las variables están íntimamente ligadas y los puntos se agrupan estrechamente sobre la línea de tendencia.
+
+### 3. Estadística
+**Sí es estadísticamente significativo.** El valor de p (p-value) es mucho menor a 0.05, lo que permite rechazar la hipótesis nula y confirmar que las horas de estudio tienen un efecto real sobre la nota.
+
+### 4. Confiabilidad del Modelo
+Es muy confiable. El valor de $R^2$ es elevado, indicando que el modelo explica la mayor parte de la variabilidad de las calificaciones obtenidas.
+
+Análisis: Grupo 2
+
+### 1. Interpretación del coeficiente de regresión
+La pendiente es positiva, indicando que a más horas de estudio suele haber mejores notas, aunque el incremento presenta una variabilidad mayor que en el primer grupo.
+
+### 2. Coeficiente de correlación (Fuerza y Dirección)
+La dirección es positiva y la fuerza es moderada-fuerte. Existe una tendencia ascendente clara, pero con una mayor dispersión de los datos respecto a la línea de regresión.
+
+### 3. Significancia Estadística
+Sí es significativo.El valor de p es menor a 0.05, por lo que el modelo sigue siendo una herramienta válida para entender la relación entre estudio y rendimiento.
+
+### 4. Confiabilidad del Modelo
+Es moderadamente confiable. Aunque es útil para predecir tendencias generales, el margen de error es superior al del Grupo 1 debido a la existencia de valores más alejados de la media.
+
+Análisis: Grupo 3
+*Basado en los datos de image_bced87.png*
+
+### 1. Interpretación del coeficiente de regresión
+La pendiente es muy baja o cercana a cero. Esto se interpreta como que el tiempo de estudio tiene un impacto mínimo o nulo en la calificación final para este conjunto de datos.
+
+### 2. Coeficiente de correlación (Fuerza y Dirección)
+La dirección es ligeramente positiva, pero la fuerza es muy débil (cercana a 0). Los datos forman una "nube" dispersa sin una estructura lineal definida.
+
+### 3. Significancia Estadística
+No es estadísticamente significativo. Es probable que el valor de p sea mayor a 0.05, lo que indica que no hay evidencia suficiente para afirmar que las horas de estudio dictan la calificación.
+
+### 4. Confiabilidad del Modelo
+Nada confiable. El $R^2$ es muy bajo, lo que demuestra que el modelo de regresión lineal no es adecuado para predecir resultados en este grupo; existen otros factores externos que influyen más que el tiempo de estudio.
+
+---
+###Conclusiones Generales
+El análisis comparativo de los tres grupos permite concluir que el tiempo de estudio no afecta de la misma manera a todos los estudiantes. Mientras que en el **Grupo 1** es un factor determinante y altamente predecible, en el **Grupo 3** el rendimiento académico parece depender de factores externos no incluidos en este modelo (como la calidad del estudio, conocimientos previos o métodos de evaluación). La regresión lineal es una herramienta poderosa, pero su utilidad real depende de la cohesión y naturaleza de los datos analizados.
