@@ -1,6 +1,8 @@
 # Proyecto Final: Análisis Estadístico de Datos COVID-19 en Python
 **Asignatura:** Probabilidad y Estadística  
+
 **Estudiante:** Iveth Esperanza Santacruz Guerrero
+
 **Docente:** Dr. José Gabriel Rodríguez Rivas  
 **Grupo:** 2Y
 **Periodo del semestre:** 6
