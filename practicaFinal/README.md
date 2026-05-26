@@ -5,8 +5,11 @@
 
 **Docente:** Dr. José Gabriel Rodríguez Rivas  
 **Grupo:** 2Y
+
 **Periodo del semestre:** 6
+
 **Fecha de entrega:**  25/05/2026
+
 **Integrantes del equipo:** Iveth Santacruz
 ---
 
@@ -32,14 +35,14 @@ A partir de la carga y el procesamiento masivo de los registros utilizando la in
 
 Para cuantificar el impacto de las condiciones preexistentes en los pacientes confirmados, se aplicaron los principios fundamentales de la teoría de la probabilidad:
 
-1. **Probabilidad Simple ($P(A)$):**
+1. **Probabilidad Simple :**
    Calculada mediante el cociente del total de individuos que presentan una comorbilidad específica ($n$) entre el total general de registros de la base de datos ($N$).
    
    $$P(\text{Comorbilidad}) = \frac{\text{Total de casos con la comorbilidad}}{\text{Total general de registros}}$$
    
    *Interpretación:* Este valor representa la prevalencia base de enfermedades crónicas en la población evaluada. Nos dice qué tan común es encontrar a un paciente con Diabetes o Hipertensión dentro del espectro completo del histórico de datos.
 
-2. **Probabilidad Condicional ($P(A \mid B)$):**
+2. **Probabilidad Condicional :**
    Determina la probabilidad de que un paciente posea una comorbilidad dado que pertenece a una entidad federativa de nacimiento en particular.
    
    $$P(\text{Comorbilidad} \mid \text{Estado}) = \frac{\text{Casos con la comorbilidad en ese Estado}}{\text{Total de casos registrados en ese Estado}}$$
@@ -57,7 +60,7 @@ Se desea calcular:
 
 $$P(2000 \le X \le 3000)$$
 
-### Paso 1: Estandarización a valores de la variable Normal Estándar ($Z$)
+### Paso 1: Estandarización a valores de la variable Normal Estándar 
 Para transformar la variable original $X$ a la distribución estándar $Z \sim N(0,1)$, aplicamos la fórmula de estandarización $Z = \frac{X - \mu}{\sigma}$:
 
 * **Para el límite inferior ($X_1 = 2000$):**
