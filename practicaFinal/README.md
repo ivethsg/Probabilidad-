@@ -12,7 +12,53 @@
 
 **Integrantes del equipo:** Iveth Santacruz
 ---
+##  2. Marco Teórico: Tipos de Muestreo y Teorema del Límite Central
 
+### A. Tipos de Muestreo
+
+En el análisis estadístico, el muestreo es el proceso de seleccionar un subconjunto de individuos de una población para estimar las características de todo el universo de datos. Se dividen en dos grandes familias:
+
+#### 1. Muestreo Probabilístico
+Todos los elementos de la población tienen una probabilidad conocida y diferente de cero de ser seleccionados. Garantiza la representatividad estadística.
+
+* **Aleatorio Simple:** Cada elemento de la población tiene exactamente la misma probabilidad de ser elegido. Se asigna un número a cada individuo y se seleccionan al azar (por ejemplo, usando funciones como `df.sample()` en Python).
+* **Sistemático:** Se elige un punto de partida de forma aleatoria y luego se selecciona cada $k$-ésimo elemento de una lista ordenada de la población (donde $k = \text{Población} / \text{Muestra}$).
+* **Estratificado:** La población se divide en subgrupos homogéneos llamados "estratos" (por ejemplo, clasificar por rangos de edad o sexo). Luego, se toma una muestra aleatoria simple de cada estrato para asegurar que todos los grupos estén justamente representados.
+* **Por Conglomerados:** Se utiliza cuando la población ya está dividida naturalmente en grupos o "conglomerados" heterogéneos (por ejemplo, escuelas o estados geográficos). Se seleccionan algunos conglomerados al azar y se analiza a todos los individuos dentro de ellos.
+
+#### 2. Muestreo NO Probabilístico
+La selección de los elementos no depende de la probabilidad, sino del criterio del investigador o de las condiciones de la investigación. No permite hacer generalizaciones estadísticas exactas sobre la población.
+
+* **Por Conveniencia:** Los elementos se seleccionan porque están fácilmente disponibles para el investigador (por ejemplo, encuestar solo a los pacientes que asisten a un hospital específico en un turno).
+* **Por Juicio (o Intencional):** El investigador utiliza su experiencia y conocimiento experto para seleccionar una muestra que considera representativa o útil para el estudio.
+* **Bola de Nieve:** Se localiza a algunos individuos con características específicas, y estos se encargan de reclutar o recomendar a otros sujetos de su círculo social. Es ideal para poblaciones de difícil acceso.
+
+---
+
+### B. Teorema del Límite Central (TLC)
+
+#### Explicación del Teorema
+El Teorema del Límite Central es uno de los pilares fundamentales de la estadística inferencial. Establece que, si se toman muestras aleatorias repetidas de tamaño $n$ de cualquier población (sin importar si la población original es uniforme, asimétrica o exponencial), a medida que el tamaño de la muestra ($n$) se vuelve lo suficientemente grande (generalmente $n \ge 30$), la **distribución de las medias muestrales se aproximará a una distribución normal (Campana de Gauss)**.
+
+La media de esta nueva distribución de medias será igual a la media de la población original ($\mu_x = \mu$), y su desviación estándar (llamada error estándar) será igual a:
+
+$$\sigma_x = \frac{\sigma}{\sqrt{n}}$$
+
+#### Importancia para la Inferencia Estadística
+La inferencia estadística busca deducir las características de una población gigante a partir del estudio de una muestra pequeña. El TLC es vital porque:
+1. Permite aplicar las propiedades de la **Distribución Normal** (como el cálculo de valores $Z$, intervalos de confianza y pruebas de hipótesis) a poblaciones cuya forma original desconocemos por completo.
+2. Garantiza que las medias calculadas a partir de muestras grandes van a estar agrupadas muy cerca de la verdadera media de la población, permitiendo hacer estimaciones con un margen de error matemáticamente controlado.
+
+---
+
+### C. Distribución Muestral de la Media
+
+La **distribución muestral de la media** es la distribución de probabilidad de todas las medias posibles que se podrían calcular a partir de muestras del mismo tamaño extraídas de una población. 
+
+#### Relación con el Teorema del Límite Central
+La relación es directa y de dependencia absoluta: la distribución muestral de la media es el "objeto" o fenómeno de estudio, mientras que el **Teorema del Límite Central es la regla matemática que describe su comportamiento**. 
+
+Sin el TLC, no sabríamos qué forma tiene la distribución muestral de la media si la población original fuera asimétrica; gracias al TLC, sabemos con certeza matemática que si el tamaño de muestra es grande, esa distribución adoptará una forma perfectamente simétrica y normal. Esto es justamente lo que justifica que en la Celda 6 de nuestro código hayamos podido modelar el comportamiento de los contagios por estado usando una distribución normal.
 ## 3. Contenido del Análisis e Interpretación Descriptiva
 
 A partir de la carga y el procesamiento masivo de los registros utilizando la infraestructura de Google Drive conectada a Python (`pandas`), se obtienen las siguientes interpretaciones estructuradas sobre el comportamiento de la base de datos de salud:
